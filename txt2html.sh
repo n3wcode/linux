@@ -1,6 +1,8 @@
 #!/bin/bash 
 ############
 # n3wcode 2021-06-12
+# USAGE: ./txt2html.sh /path/to/your/textfile.txt"'
+# OUTPUT: /path/to/your/textfile.html
 
 INPUT=$1
 LOCATION=$(pwd)
@@ -15,7 +17,6 @@ echo '<!DOCTYPE html>
 </head>
 <body>' >> $LOCATION/$NAME.html
 }
-
 
 WEBMAIN () {
 while read -r LINE 
@@ -44,8 +45,6 @@ echo "<p style=${VAR2}>--------- ....</p>"  >> $LOCATION/$NAME.html
 echo "<p style=${VAR3}>123456789 test</p>"  >> $LOCATION/$NAME.html
 echo "<p style=${VAR3}>--------- ....</p>"  >> $LOCATION/$NAME.html
 }
-
-
 
 WEBEND () {
 echo '
