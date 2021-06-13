@@ -27,7 +27,6 @@ then
 else
 while read -r line 
 do
-	read -r  "line"
 	echo "$line"
 done < $INPUT
 fi
